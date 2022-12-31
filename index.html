@@ -1,18 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Dashboard</title>
 
-    <link rel="stylesheet" href="./de">
-</head>
-<body>
-    <div class="main">
-        <div class="sidebar"></div>
-        <div class="user-content"></div>
-    </div>
-    
-</body>
+        <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="./icons/view-dashboard-outline.png"><h2>Dashboard</h2>
+            </div>
+
+
+            <div class="main-links">
+                <div><img src="./icons/home.png"><h3>Home</h3>
+                </div>
+                <div><img src="./icons/card-account-details-outline.png"><h3>Profile</h3>
+                </div>
+                <div><img src="./icons/message-reply-outline.png"><h3>Messages</h3>
+                </div>
+                <div><img src="./icons/clock-time-five-outline.png"><h3>History</h3>
+                </div>
+                <div><img src="./icons/calendar-check-outline.png"><h3>Tasks</h3>
+                </div>
+                <div><img src="./icons/account-group-outline.png"><h3>Communities</h3>
+                </div>
+            </div>
+            <div class="secondary-links">
+                <div><img src="./icons/cog-outline.png"><h3>Settings</h3>
+                </div>
+                <div><img src="./icons/face-agent.png"><h3>Support</h3>
+                </div>
+                <div><img src="./icons/lock-alert-outline.png"><h3>Privacy</h3>
+                </div>
+            </div>
+        </nav>
+
+        <div class="wrapper">
+            <header>
+                <form action="" method="get">
+                    <label for="search"><img src="./icons/magnify.png"></label>
+                    <input type="search" name="q" id="search">
+                </form>
+                <div class="quick-links">
+                    <a href="" class="notifications"><img src="./icons/bell-outline.png"></a>
+                    <img class="profile-pic" src="./icons/pexels-victor-freitas-733767.jpg">
+                    <span class="username"><h4>Utkarsh Srivastava</h4></span>
+                </div>
+                <div class="welcome">
+                    <img src="./icons/pexels-victor-freitas-733767.jpg">
+                    <p><h4>Hi there,</h4>  
+                    <h3>Utkarsh Srivastava (@tweedledum)</h3></p>
+                </div>
+                <div class="btns">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+            </header>
+            <main></main>
+
+        </div>
+    </body>
 </html>

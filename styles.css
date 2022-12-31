@@ -1,9 +1,143 @@
+html{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 
+}
 
+body{
 
-.main{
-    height: 100%;
-    width: 100%;
+    min-height: 100vh;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 300px 1fr;
+}
+
+.wrapper{
+    background-color: #362D4B;
+    color: aliceblue;
+    padding: 4rem;
+}
+
+img{
+    
+    height:2.5rem ;
+    width: 2.5rem;
+}
+
+.sidebar{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    background-color: #F06789;
+    color: aliceblue;
+    
+}
+
+.sidebar>div{
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+}
+
+.sidebar>div.logo{
+    align-content: flex-start;
+}
+
+.main-links>div{
+    align-items: center;
+}
+
+.secondary-links>div{
+    align-items: center;
+}
+
+
+.logo,.main-links>div,.secondary-links>div{
+    display: flex;
+    gap: 1rem;
+}
+
+
+header{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+input{
+    appearance: none;
+    border-radius: 1.2rem;
+    border: 2px solid rgb(101, 98, 98);
+    padding: 4px;
+}
+
+.quick-links{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+form{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+
+.quick-links>img{
+    height: 48px;
+    width: 48px;
+    border-radius: 1.2rem;
+    border: 2px solid aliceblue;
+}
+
+.welcome{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 1rem;
+}
+
+.welcome>h4{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.welcome>h3{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: flex-end;
+}
+
+
+.welcome>img{
+    height:100px ;
+    width:100px ;
+    border-radius: 1.2rem;
+    border: 3px solid aliceblue;
+}
+form>input{
+    flex:1 1 auto;
+}
+
+
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.btns>button{
+    font-size: 1.2rem;
+    border-radius: 1.2rem;
+    border: 2px solid #f06789;
+    background-color: #f06789;
+    color: aliceblue;
+    padding:10px ;
+    box-shadow: 0 0 5px black;
+    width: 100px;
 }
